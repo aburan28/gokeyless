@@ -15,6 +15,7 @@ origin_ca_api_key:
 # Configure one or more private key directories.
 private_key_stores:
 - dir: /etc/keyless/keys
+- uri: pkcs11:token=accelerator;object=rsa-privkey;slot-id=492971157?module-path=/opt/nfast/toolkits/pkcs11/libcknfast.so
 
 # Optionally customize the location of the certificates used for mutual
 # authentication with Cloudflare keyless clients.
