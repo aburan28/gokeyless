@@ -49,6 +49,27 @@
   revision = "6a9aea36fb410b71add0d0e58438e0cfc44d3076"
 
 [[projects]]
+  digest = "1:d0c627a917a790188170f7e9f253e7db4fd15a4af821eb095356718dcf2022ac"
+  name = "github.com/cloudflare/gokeyless"
+  packages = [
+    "client",
+    "cmd/bench/internal/client",
+    "conn",
+    "internal/rfc7512",
+    "internal/test/params",
+    "protocol",
+    "server",
+    "server/internal/client",
+    "server/internal/ecdsa",
+    "server/internal/rsa",
+    "server/internal/worker",
+    "tests",
+  ]
+  pruneopts = "UT"
+  revision = "e70e019162aa86cf150e11281c5ed12a480ef08b"
+  version = "1.5.3"
+
+[[projects]]
   digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
@@ -373,6 +394,18 @@
     "github.com/cloudflare/cfssl/helpers/derhelpers",
     "github.com/cloudflare/cfssl/log",
     "github.com/cloudflare/go-metrics",
+    "github.com/cloudflare/gokeyless/client",
+    "github.com/cloudflare/gokeyless/cmd/bench/internal/client",
+    "github.com/cloudflare/gokeyless/conn",
+    "github.com/cloudflare/gokeyless/internal/rfc7512",
+    "github.com/cloudflare/gokeyless/internal/test/params",
+    "github.com/cloudflare/gokeyless/protocol",
+    "github.com/cloudflare/gokeyless/server",
+    "github.com/cloudflare/gokeyless/server/internal/client",
+    "github.com/cloudflare/gokeyless/server/internal/ecdsa",
+    "github.com/cloudflare/gokeyless/server/internal/rsa",
+    "github.com/cloudflare/gokeyless/server/internal/worker",
+    "github.com/cloudflare/gokeyless/tests",
     "github.com/joshlf/testutil",
     "github.com/lziest/ttlcache",
     "github.com/miekg/dns",

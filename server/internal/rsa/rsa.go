@@ -28,6 +28,7 @@ func Decrypt(priv *rsa.PrivateKey, ciphertext []byte) ([]byte, error) {
 // plaintext big.Int. RSA blinding is always used.
 func rsaDecryptInt(priv *rsa.PrivateKey, c *big.Int) (m *big.Int, err error) {
 	// TODO(agl): can we get away with reusing blinds?
+	// No, must be randomized 
 	if c.Cmp(priv.N) > 0 {
 		err = rsa.ErrDecryption
 		return
